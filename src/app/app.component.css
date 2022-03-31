@@ -1,0 +1,12 @@
+.container{
+  width: 50%;
+  margin: 2cm grey;
+  box-shadow: 2em;
+  background-color: white;
+}
+
+.centerdiv{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
