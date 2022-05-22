@@ -3,9 +3,24 @@
   <br>
   <br>
   <div class="centerdiv container">
-    <app-main></app-main>
+    <br>
+    <h1>Hello!!! Welcome to Search Results Storage Application</h1>
     <hr>
-    <app-search-results></app-search-results>
+    <ais-instantsearch [config]="config">
+      <ais-search-box aria-placeholder="Search"></ais-search-box>
+      <hr>
+      <ais-hits>
+        <ng-template let-hits="hits">
+          <ol class="ais-Hits-list">
+            <li *ngFor="let hit of hits" class="ais-Hits-item">
+             {{hit.name}}
+             <hr>
+            </li>
+          </ol>
+        </ng-template>
+      </ais-hits>
+    </ais-instantsearch>
+    <br>
   </div>
   <br>
   <br>

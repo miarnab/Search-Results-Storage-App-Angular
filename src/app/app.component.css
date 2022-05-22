@@ -10,3 +10,11 @@
   margin-left: auto;
   text-align: center;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+.ais-SearchBox {
+  margin-bottom: 1em;
+}
