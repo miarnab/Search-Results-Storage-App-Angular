@@ -9,18 +9,19 @@
     <ais-instantsearch [config]="config">
       <ais-search-box aria-placeholder="Search"></ais-search-box>
       <hr>
-      <ais-hits>
-        <ng-template let-hits="hits">
-          <ol class="ais-Hits-list">
-            <li *ngFor="let hit of hits" class="ais-Hits-item">
-             {{hit.name}}
-             <hr>
-            </li>
-          </ol>
-        </ng-template>
-      </ais-hits>
+      <div class="search-results">
+        <ais-hits>
+          <ng-template let-hits="hits">
+            <ol class="ais-Hits-list">
+              <li *ngFor="let hit of hits" class="ais-Hits-item">
+                {{ hit.name }}
+                <hr>
+              </li>
+            </ol>
+          </ng-template>
+        </ais-hits>
+      </div>
     </ais-instantsearch>
-    <br>
   </div>
   <br>
   <br>

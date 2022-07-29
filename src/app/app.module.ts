@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgAisModule } from 'angular-instantsearch';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NgAisModule } from 'angular-instantsearch';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     NgAisModule.forRoot()
   ],
   providers: [],
